@@ -1,0 +1,77 @@
+/* Project name: Bellion Group */
+/* Develope by: Bellion Group */
+/* Developer Web belliongroup.com */
+
+/* variables */
+/* Primary Color */
+$primaryColor: #0D6EFD
+
+/* Black color */
+$bodyColor: #656565
+$blackColor: #111013
+
+/* White color */
+$whiteColor: #ffffff
+
+
+/* Fonts */
+$font: 'Inter', sans-serif
+
+*,*,*:after,*:before
+    margin: 0
+    padding: 0
+    position: relative
+    box-sizing: border-box
+    transition: all 0.2s ease-in-out
+    &:focus
+        outline: none !important
+
+::selection
+    background-color: $primaryColor
+    color: $whiteColor
+
+html,body
+    font-family: $font !important
+    font-weight: 400
+    scroll-behavior: smooth
+    color: $bodyColor
+    @media (max-width: 768px)
+        overflow-x: hidden !important
+
+h1,h2,h3,h4,h5,h6
+    font-weight: 700
+
+div,header,nav,footer,section,aside,article
+    display: block
+
+a
+    color: $primaryColor
+    text-decoration: none
+    transition: all 0.05s ease-in !important
+    &:hover
+        text-decoration: none
+        color: $primaryColor
+
+input,select,textarea
+    &:focus
+        outline: none !important
+
+p
+    font-size: 16px
+    @media (max-width: 576px)
+        font-size: 14px
+
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style-type: none
+
+img
+    width: 100%
+
+.main
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
